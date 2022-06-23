@@ -21,7 +21,7 @@ jobs:
       - name: Build Website
         run: |
           npm run build
-          echo "www.microfrontends.art" > dist/CNAME
+          echo "microfrontends.art" > dist/CNAME
           cp dist/index.html dist/404.html
       - name: Deploy Website
         run: |
