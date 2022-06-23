@@ -1,6 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import books from '../assets/books.jpg';
+import Image from './Image';
+import booksJpg from '../assets/books.jpg';
+import booksWebp from '../assets/books.webp';
 
 const Intro = styled.p`
   font-size: 2rem;
@@ -14,7 +16,7 @@ function Book() {
   return (
     <Section>
       <h2>About the Book</h2>
-      <img src={books} alt="The book" width="1024" height="768" />
+      <Image source={booksWebp} fallback={booksJpg} alt="The Art of Micro Frontends Book Cover" width={1024} height={768} />
       <Intro>With "The Art of Micro Frontends" you'll be able to scale your frontend to new dimensions.</Intro>
       <p>
         Using my book you will be able to create basic implementations using all of the popular architecture patterns.

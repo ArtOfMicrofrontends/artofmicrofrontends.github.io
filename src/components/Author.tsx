@@ -1,6 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import portrait from '../assets/portrait.png';
+import Image from './Image';
+import portraitPng from '../assets/portrait.png';
+import portraitWebp from '../assets/portrait.webp';
 
 const Intro = styled.p`
   font-size: 2rem;
@@ -14,7 +16,7 @@ function Author() {
   return (
     <Section>
       <h2>About the Author</h2>
-      <img src={portrait} alt="Florian Rappl" width="400" height="371" />
+      <Image source={portraitWebp} fallback={portraitPng} alt="Florian Rappl" width={400} height={371} />
       <Intro>Hi, my name is Florian Rappl. I am a solution architect from Munich, Germany.</Intro>
       <p>
         I wrote "The Art of Micro Frontends" to help you master the foundations of micro frontends. In the last six

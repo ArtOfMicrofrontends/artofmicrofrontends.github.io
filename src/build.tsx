@@ -15,7 +15,7 @@ const styleTags = sheet.getStyleTags();
 sheet.seal();
 
 const html = `<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>The Art of Micro Frontends - Florian Rappl</title>

@@ -3,7 +3,7 @@ import { basename, resolve } from 'path';
 import { createHash } from 'crypto';
 
 const assets: Array<[content: Buffer, name: string]> = [];
-const extensions = ['.png', '.jpg'];
+const extensions = ['.png', '.jpg', '.webp'];
 
 function installExtension(ext: string) {
   require.extensions[ext] = (module, filename) => {
