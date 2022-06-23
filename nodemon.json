@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": "ts,tsx,json,png,jpg",
+  "ignore": ["src/**/*.test.tsx?"],
+  "exec": "NODE_ENV=debug ts-node ./src/build.tsx"
+}
