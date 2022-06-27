@@ -1,4 +1,4 @@
-import { writeFileSync, readFileSync, mkdirSync } from 'fs';
+import { writeFileSync, readFileSync, mkdirSync, readdirSync } from 'fs';
 import { basename, resolve } from 'path';
 import { createHash } from 'crypto';
 
@@ -17,6 +17,14 @@ function installExtension(ext: string) {
 }
 
 extensions.forEach(installExtension);
+
+export function addAssets(dir: string) {
+  readdirSync(dir).forEach((name) => {
+    const path = resolve(dir, name);
+    const content = readFileSync(path);
+    addAsset(content, name);
+  });
+}
 
 export function addAsset(content: Buffer, name: string) {
   assets.push([content, name]);

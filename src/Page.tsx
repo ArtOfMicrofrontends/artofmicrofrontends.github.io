@@ -10,12 +10,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    margin: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr min(110ch, calc(100% - 2rem)) 1fr;
+
+    & > * {
+      grid-column: 2;
+    }
   }
 
   * {
     box-sizing: border-box;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
   }
 
   img {

@@ -12,11 +12,17 @@ const Section = styled.section`
   grid-area: author;
 `;
 
+const Center = styled.div`
+  text-align: center;
+`;
+
 function Author() {
   return (
     <Section>
-      <h2>About the Author</h2>
-      <Image source={portraitWebp} fallback={portraitPng} alt="Florian Rappl" width={400} height={371} />
+      <h2>The Author</h2>
+      <Center>
+        <Image source={portraitWebp} fallback={portraitPng} alt="Florian Rappl" width={400} height={371} />
+      </Center>
       <Intro>Hi, my name is Florian Rappl. I am a solution architect from Munich, Germany.</Intro>
       <p>
         I wrote "The Art of Micro Frontends" to help you master the foundations of micro frontends. In the last six
