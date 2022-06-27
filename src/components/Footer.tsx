@@ -11,7 +11,7 @@ const Container = styled.footer`
 const Copyright = styled.div`
   margin-top: 1rem;
   text-align: center;
-  color: #aaa;
+  color: #444;
   margin-bottom: 0;
 `;
 
