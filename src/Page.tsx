@@ -28,6 +28,10 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     height: auto;
   }
+
+  p {
+    text-align: justify;
+  }
 `;
 
 export const Page: React.FC = () => (

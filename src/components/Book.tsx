@@ -4,8 +4,11 @@ import Image from './Image';
 import frontPng from '../assets/front-small.png';
 import frontWebp from '../assets/front-small.webp';
 
-const Intro = styled.p`
+const Intro = styled.q`
   font-size: 2rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 `;
 
 const Section = styled.section`
@@ -29,7 +32,7 @@ function Book() {
           height={371}
         />
       </Center>
-      <Intro>With "The Art of Micro Frontends" you'll be able to scale your frontend to new dimensions.</Intro>
+      <Intro>With "The Art of Micro Frontends" you'll scale your frontend to new dimensions.</Intro>
       <p>
         Using my book you will be able to create basic implementations using all of the popular architecture patterns.
         You will also learn when micro frontends make sense and when you should fall back to other solutions.

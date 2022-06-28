@@ -1,18 +1,18 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import Articles from './Articles';
+import Examples from './Examples';
 import Author from './Author';
 import Book from './Book';
-import Cover from './Cover';
-import Examples from './Examples';
 import Videos from './Videos';
 import Links from './Links';
 import Talks from './Talks';
 import Shops from './Shops';
+import Header from './Header';
+import Footer from './Footer';
 import Reviews from './Reviews';
 import Outline from './Outline';
 import Buy from './Buy';
-import Footer from './Footer';
 
 const Grid = styled.div`
   display: grid;
@@ -49,21 +49,10 @@ const Grid = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  text-align: center;
-  font-weight: bold;
-  font-size: 4rem;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  background-image: linear-gradient(135deg, #0e73cc 1.93%, #624bbb 14.86%, #ff455d 48.09%, #f35815 77.82%, #f2b600 97.3%);
-`;
-
 function Content() {
   return (
     <>
-      <Cover />
-      <Title>The Art of Micro Frontends</Title>
+      <Header />
       <Grid>
         <Book />
         <Author />

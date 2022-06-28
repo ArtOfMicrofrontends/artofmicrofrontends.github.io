@@ -4,8 +4,11 @@ import Image from './Image';
 import portraitPng from '../assets/portrait.png';
 import portraitWebp from '../assets/portrait.webp';
 
-const Intro = styled.p`
+const Intro = styled.q`
   font-size: 2rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 `;
 
 const Section = styled.section`
