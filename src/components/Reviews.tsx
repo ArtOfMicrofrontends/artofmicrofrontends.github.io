@@ -10,6 +10,10 @@ const Background = styled.div`
   text-align: center;
 `;
 
+const CopyInfo = styled.p`
+  text-align: center;
+`;
+
 function Reviews() {
   return (
     <Background>
@@ -22,6 +26,9 @@ function Reviews() {
           height={497}
         />
       </a>
+      <CopyInfo>
+        Currently sold: <b>2,643</b> copies (31st of March 2022).
+      </CopyInfo>
     </Background>
   );
 }
