@@ -27,7 +27,7 @@ function Reviews() {
         />
       </a>
       <CopyInfo>
-        Currently sold: <b>3,738</b> copies (31st of December 2022).
+        Currently sold: <b>4,033</b> copies (31st of March 2023).
       </CopyInfo>
     </Background>
   );
