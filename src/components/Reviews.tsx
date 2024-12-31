@@ -27,7 +27,7 @@ function Reviews() {
         />
       </a>
       <CopyInfo>
-        Currently sold: <b>4,809</b> copies (30th of June 2024).
+        Currently sold: <b>4,862</b> copies (30th of September 2024).
       </CopyInfo>
     </Background>
   );
